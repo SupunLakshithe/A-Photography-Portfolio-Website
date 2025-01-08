@@ -43,7 +43,7 @@ A PHP-based photography portfolio website with booking system and gallery manage
 
 1. Clone repository:
 ```bash
-git clone https://github.com/yourusername/lismores-lens.git
+git clone [https://github.com/SupunLakshithe/A-Photography-Portfolio-Website.git]
 ```
 
 2. Create MySQL database: `database-site07`
