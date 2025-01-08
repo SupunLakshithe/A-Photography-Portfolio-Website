@@ -35,7 +35,7 @@ A PHP-based photography portfolio website with booking system and gallery manage
 ![image](https://github.com/user-attachments/assets/d67fc488-77b0-451c-9915-da2b2711c2d6)
 ![image](https://github.com/user-attachments/assets/8d51d52b-174c-460a-9648-42a3e5abcc10) ![image](https://github.com/user-attachments/assets/dca7e1ed-84f4-4e08-bc5c-2f5b7344b7f9)
 
-## Database design
+## Database Design
 
 ![image](https://github.com/user-attachments/assets/8d1723d6-137f-46bf-af9a-16dd7843cd4e)
  
