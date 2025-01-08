@@ -1,0 +1,830 @@
+:root {
+    --font-base: 'Brush Script MT';
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.877);
+    border-radius: 0px 0px 20px 20px;
+}
+
+h1 {
+    font-family: var(--font-base);
+    font-weight: 100 !important;
+    font-size: 130px !important;
+    color: rgba(247, 207, 207, 0.719);
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(51, 134, 243, 0.904);
+}
+
+.navbar-nav a {
+    border-radius: 25px;
+    font-size: 17px !important;
+    color: rgb(119, 119, 228) !important;
+    text-align: center;
+    margin: 10px !important;
+
+}
+
+.navbar a:hover {
+    background-color: rgb(128, 231, 245);
+}
+
+.nav-link.active {
+
+    background-color: #00c3ffe1;
+    color: #000000;
+}
+
+.hide {
+    display: none;
+}
+
+/*-----------------------------------------------small size-------------------------------------------------------------*/
+@media (max-width: 767px) {
+    .heading {
+        font-size: 50px !important;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .navbar {
+        margin-left: 7%;
+        margin-right: 3%;
+    }
+
+    .card {
+        margin-left: 7%;
+        margin-right: 3%;
+    }
+
+    #homeh3 {
+        padding-top: 10;
+        font-size: 15px !important;
+    }
+
+    #feedback {
+        visibility: hidden;
+    }
+
+    .bio {
+        margin-left: 5% !important;
+        margin-top: 30px !important;
+    }
+
+    .aboutbody {
+        overflow: scroll !important;
+    }
+
+    .bio img {
+        margin-top: 10px !important;
+    }
+
+    .contact small {
+        margin-left: 0px !important;
+    }
+
+    .signin {
+        min-width: 80% !important;
+    }
+
+    .signin .inpt {
+        min-width: 90% !important;
+        margin-left: 5% !important;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-gap: 20px;
+        background-color: #08080854;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-left: 7% !important;
+    }
+
+    .buttons {
+        margin-top: 20px;
+        margin-left: 6% !important;
+    }
+
+    .buttons button {
+        margin: 10px !important;
+    }
+
+    .sidebar {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        overflow: auto !important;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    .img-upload {
+        margin-top: 60px;
+        max-width: 90% !important;
+    }
+
+    .del-gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-gap: 20px;
+        background-color: #08080854;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-left: 7% !important;
+    }
+
+    .booking .btn {
+        margin-right: 1000px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .user-add{
+        min-width: 90% !important;
+    }
+
+}
+
+/* -----------------------------------home--------------------------------------------------------------------------- */
+.Homebody {
+    width: 100%;
+    margin: -12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    scroll-behavior: smooth;
+    animation: changebackgrnd 100s infinite;
+}
+
+@keyframes changebackgrnd {
+    0% {
+        background-image: url("../assets/img/elephant.jpg");
+    }
+
+    50% {
+        background-image: url("../assets/img/mountains.jpg");
+    }
+
+    99% {
+        background-image: url("../assets/img/wolves.jpg");
+    }
+}
+
+#signin-button {
+    border: 1px solid rgb(14, 17, 235);
+    margin-left: 20px;
+    border-radius: 25px;
+    padding: 6px 15px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.navbar-toggler-ui-icon {
+    border-color: aliceblue !important;
+}
+
+/* --------------------------headings---- */
+#homeh1 {
+    background-color: rgba(0, 0, 0, 0.333);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    border-radius: 200px;
+    text-align: center;
+}
+
+#homeh3 {
+    margin-top: -25px;
+    padding-bottom: 10px;
+}
+
+/* ---------------------------cards ------- */
+.cards .card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.884);
+    transition: all 0.2s ease-in-out;
+    margin-top: 3%;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.603) !important;
+}
+
+.cl {
+    border-radius: 10% 0 10% 10% !important;
+}
+
+.cl img {
+    border-radius: 60% 0 10% 10% !important;
+}
+
+.cr {
+    border-radius: 0% 10% 10% 10% !important;
+}
+
+.cr img {
+    border-radius: 0 10% 60% 10% !important;
+}
+
+.card:hover {
+    box-shadow: 0 5px 5px rgba(0, 38, 255, 0.19), 0 6px 6px rgba(0, 217, 255, 0.23);
+}
+
+.card>.card-inner {
+    padding: 10px;
+}
+
+.image {
+    height: 50% !important;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    color: aliceblue;
+}
+
+.card h2 {
+    font-style: italic;
+    color: aqua;
+}
+
+.cards .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 64, 77, 0.5);
+    /* Adjust the background color and opacity */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.overlay:hover {
+    opacity: 1;
+    border-radius: 10%;
+}
+
+/*--------------------feedbacks--------------*/
+
+#feedback {
+    background-color: rgba(0, 0, 0, 0.555);
+    margin-top: 3%;
+    height: 15%;
+    width: 60%;
+    margin-left: 20%;
+    overflow: hidden;
+    border-radius: 20% 20% 20% 20%;
+
+}
+
+.carousel-item img {
+    border-radius: 50%;
+    margin-left: 35%;
+}
+
+.carousel-caption {
+    margin-left: 30%;
+    text-align: start !important;
+}
+
+
+/* -----------------------------------about--------------------------------------------------------------------------- */
+
+.aboutbody {
+
+    width: 100%;
+    margin: -12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-image: url("..//assets/img/black.jpg");
+}
+
+.bio {
+    margin-top: 90px;
+}
+
+.bio img {
+    width: 90%;
+    border-radius: 50%;
+    border-style: double;
+    margin-top: 10px;
+}
+
+.bio h1 {
+    font-size: 100px !important;
+    color: rgba(115, 115, 243, 0.884) !important;
+}
+
+.bio p {
+    font-size: x-large;
+    color: rgb(0, 255, 242) !important;
+
+}
+
+.contact {
+    text-align: center;
+    margin-top: 5%;
+    height: 10%;
+}
+
+.contact a {
+    margin: 10px;
+}
+
+/* -----------------------------------Contact--------------------------------------------------------------------------- */
+.contactbody {
+    width: 100%;
+    margin: -12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    scroll-behavior: smooth;
+    background-image: url("..//assets/img/tablet.jpg");
+}
+
+.contactbody .h3 {
+    color: rgba(1, 2, 2, 0.425) !important;
+}
+
+.contactbody label {
+    color: #264757b0 !important;
+}
+
+
+.bg-image {
+    background-image: url('../assets/img/ocean.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .7;
+}
+
+.bg-image:hover {
+    opacity: 1;
+}
+
+.contact p {
+    color: red;
+}
+
+.contact small {
+    margin-left: -155px;
+}
+
+/* -----------------------------------pricing--------------------------------------------------------------------------- */
+.packagesbody {
+    width: 100%;
+    margin: -12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    scroll-behavior: smooth;
+    background-image: url("../assets/img/silver.jpg");
+}
+
+.packages img {
+    border-radius: 50% !important;
+    margin-bottom: -25;
+}
+
+.packages .card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.884);
+    transition: all 0.2s ease-in-out;
+    margin-top: 1%;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.603) !important;
+    border-radius: 20%;
+}
+
+.packages h3 {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+
+.packages .platinum {
+    color: rgb(151, 243, 243);
+}
+
+.packages .gold {
+    color: goldenrod;
+}
+
+.packages .silver {
+    color: silver;
+}
+
+.packages h1 {
+    color: #00eeff;
+    font-size: 100px !important;
+    margin-top: -180px;
+}
+
+.packages p {
+    margin-top: 7px;
+}
+
+.packages a {
+    margin-top: -50px !important;
+    font-size: medium;
+}
+
+/* -----------------------------------signin--------------------------------------------------------------------------- */
+
+.signinbody {
+    width: 100%;
+    margin: -12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    scroll-behavior: smooth;
+    background-image: url(..//assets/img/signin.jpg);
+}
+
+.signin {
+    margin-top: 60px;
+    max-width: 40%;
+}
+
+.signin .card {
+    background-color: #00eeff00;
+    text-align: center;
+}
+
+.signin h3 {
+    color: rgb(0, 110, 255);
+    margin-top: 30px;
+}
+
+.signin form {
+    margin-top: 10px;
+}
+
+
+.signin .inpt {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
+.signin button {
+    margin-top: 30px;
+}
+
+.signin p {
+    color: red;
+}
+
+/* -----------------------------------gallery--------------------------------------------------------------------------- */
+.gallerybody {
+    width: 100%;
+    margin: -12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    scroll-behavior: smooth;
+    background-image: url("../assets/img/gallery-background.jpg");
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: #08080854;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 50px;
+
+}
+
+.gallery img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    margin: 50px;
+    border-radius: 20% 0 40% 0;
+    background-color: #006eff96;
+    width: 100px;
+}
+
+.active-button {
+    background-color: #003172 !important;
+    color: #132d4ef3;
+}
+
+/* -----------------------------------booking--------------------------------------------------------------------------- */
+
+.bookingbody {
+    width: 100%;
+    margin: -12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    scroll-behavior: smooth;
+    background-image: url("../assets/img/tablet.jpg");
+}
+
+.booking .topic {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: #006effc4;
+}
+
+.booking .btn {
+    margin-left: -120px;
+    margin-top: 30px;
+}
+
+.booking .card {
+    background-color: rgba(255, 255, 255, 0.975);
+}
+
+.booking p {
+    color: red !important;
+    font-size: small;
+}
+
+/* -----------------------------------thankyou--------------------------------------------------------------------------- */
+
+.thankyou button {
+    margin-top: 10px;
+    color: #171874;
+    border-width: 0;
+    background-color: #155ebe56;
+    height: 50px;
+    width: 90px;
+    border-radius: 10%;
+}
+
+.thankyou h3 {
+    color: #000000;
+}
+
+/* -----------------------------------admin-panel--------------------------------------------------------------------------- */
+
+.admin-panelbody {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.admin-panelbody .sidebar {
+    margin-top: -55px;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1 !important;
+    position: fixed;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    float: left;
+}
+
+.sidebar .active {
+    border-radius: 10% !important;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .center-side {
+    text-align: center;
+    background-color: #3b3f3f60;
+    border-radius: 40% 20%;
+}
+
+.sidebar .side-1 {
+    margin-left: 20px;
+    font-size: 40px !important;
+    color: rgb(241, 81, 81);
+    font-style: italic;
+}
+
+.sidebar .side-2 {
+    font-size: 18px;
+    margin-left: -15px;
+    margin-top: -15px;
+    color: rgba(0, 60, 255, 0.904);
+
+}
+
+.sidebar img {
+    width: 70px;
+    margin-left: 20px;
+}
+
+.sidebar .topic-1 {
+    margin-top: 20px;
+    background-color: #89daffbe;
+}
+
+.sidebar .topic-1 p {
+    margin-top: 10px;
+    color: #050505b4;
+}
+
+.sidebar .topic-2 {
+    background-color: #6a7a8367;
+    margin-bottom: 7px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.sidebar .topic-2 p {
+    margin-top: 10px;
+    color: #363131b4;
+}
+
+.sidebar .end-data {
+    text-align: center;
+    margin-top: -15px;
+}
+
+.sidebar .end-data p {
+    color: red;
+    font-size: 12px;
+}
+
+.sidebar span {
+    font-size: small;
+}
+
+/* -----------------------------------user-add--------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------------gal-add--------------------------------------------------------------------------- */
+
+.img-upload {
+    margin-top: 60px;
+    max-width: 40%;
+}
+
+.img-upload .card {
+    background-color: #00eeff00;
+    text-align: center;
+    padding: 50px;
+}
+
+.img-upload form {
+    margin-top: 10px;
+}
+
+.img-upload h3 {
+    color: rgb(0, 110, 255);
+    margin-top: 30px;
+}
+
+.img-upload .r1 {
+    margin-top: 30px;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.img-upload .r2 {
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.img-upload .text-muted {
+    font-size: small;
+    margin-left: 40px;
+}
+
+.img-upload.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-upload .input1 {
+    width: 100%;
+    height: 100%;
+}
+
+.img-upload .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+}
+
+.img-upload input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+}
+
+.img-upload .err {
+    color: rgb(255, 100, 100);
+}
+.main .card{
+    margin-left: 10% !important;
+}
+/* -----------------------------------gal-delete--------------------------------------------------------------------------- */
+
+.img-delete {
+    margin-top: 60px;
+    max-width: 90%;
+}
+
+.img-delete .card {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.del-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    background-color: #ffffff54;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 50px;
+
+}
+
+.del-gallery img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/* -----------------------------------user-add--------------------------------------------------------------------------- */
+.user-add {
+    width: 60% !important;
+    text-align: center;
+    padding: 50px !important;
+}
+
+.user-add h3 {
+    margin-top: 50px;
+}
+
+.user-add .inpt1 {
+    margin-top: 30px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.user-add button {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 45%;
+}
+
+.user-add .cus1 {
+    width: 70%;
+
+
+}
